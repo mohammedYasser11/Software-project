@@ -1,0 +1,53 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .x {
+    float: left;
+    position: relative;
+    left: 30%;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #000;
+  }
+  .login {
+    float: left;
+    position: fixed;
+    left: 90%;
+    background-color: #C69749;
+    border-radius: 12px;
+  }
+  .login a:hover {
+    background-color: #735F32;
+    
+    border-radius: 12px;
+  }
+  .logo{
+    float: left;
+    position: relative;
+    left: 5%;
+    margin-top: 0.3%; 
+  }
+  .navbarul{
+    background-color: #282A3A;
+    position: fixed;
+    width: 100%;
+  }
+  body{
+    background-color: #282A3A;
+  }
