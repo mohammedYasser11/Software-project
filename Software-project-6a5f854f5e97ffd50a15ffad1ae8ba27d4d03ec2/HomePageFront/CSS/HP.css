@@ -1,0 +1,98 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .x {
+    float: left;
+    position: relative;
+    left: 30%;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #000;
+  }
+  .login {
+    float: left;
+    position: fixed;
+    left: 90%;
+    background-color: #C69749;
+    border-radius: 12px;
+  }
+  .login a:hover {
+    background-color: #735F32;
+    
+    border-radius: 12px;
+  }
+  .logo{
+    float: left;
+    position: relative;
+    left: 5%;
+    margin-top: 0.3%; 
+  }
+  .navbarul{
+    background-color: #282A3A;
+    position: fixed;
+    width: 100%;
+  }
+  body{
+    background-color: #282A3A;
+  }
+   /* done by sara..  */
+  .container {
+    position: relative;
+    text-align: center;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+    line-height: 4px;
+  }
+ .sent1{
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-size: 30px;  
+ }
+ .sent2{
+    color:rgba(255, 255, 255, 0.649);
+    font-family: sans-serif;
+    font-size: 10px; 
+ }
+ .sent3{ 
+    color:rgba(255, 255, 255, 0.649);
+    font-family: sans-serif;
+    font-size: 10px;
+ } 
+ .button{ 
+  background-color: rgb(198, 151, 73);
+  font-size: 14px;
+   color:white ; 
+    left: -20px; 
+    font-family: sans-serif;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.5s;
+  }
+  .button:hover {
+    background-color: rgb(174, 130, 59);
+    cursor: pointer;
+  }
+ /* end.. */
