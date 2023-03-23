@@ -43,18 +43,18 @@ ul {
     margin-top: 0.3%; 
   }
   .navbarul{
-    background-color: #282a3a;
+    background-color: #282a3a00;
     position: fixed;
     width: 100%;
     margin: 10px;
     z-index:1;
     
   }
-  /* body{
+  body{
     background-color: #282A3A;
     padding: 0%;
     margin: 0%;
-  } */
+  }
   .navbar{
     margin-top: 0%;
     position: relative;
@@ -62,9 +62,11 @@ ul {
 
   .footer{
     height: 500px;
+    
     background-color: #000;
     width: auto;
     position: relative;
+    
     color: #fff;
     
   }
