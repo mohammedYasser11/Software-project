@@ -14,7 +14,7 @@ line-height: 25px;}
       font-size:x-large;
       word-spacing: 5px;
       margin-right: 30px;
-      /* color: white; */
+      color: white;
      
     }
     .weight1{
@@ -41,11 +41,11 @@ line-height: 25px;}
     }
     .word , .word1{
       word-spacing: 0px;
-      /* color: white; */
+      color: white;
     } 
   
     .word0{
-      /* color: white; */
+      color: white;
     }
     .button{ 
       background-color: rgb(249, 187, 89) ;
