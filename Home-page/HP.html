@@ -5,22 +5,32 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/Home-page/CSS/NavBar.css" />
     <link rel="stylesheet" type="text/css" href="/Home-page/CSS/SlideShow.css" />
-
+    <link rel="stylesheet" href="/bootstrap-5.2.3-dist/css/bootstrap.css">
+    <link rel="icon" type="image/x-icon" href="/Logo.png">
     <title>Homepage</title>
 </head>
-<body>
+<body style="background-color: #282A3A;">
 
 <!--NAVBAR-->
 
-    <div class="navbar">
-        <ul class="navbarul">
-            <li class ="logo"> <input type="image" name="Logo" src="Logo.png" href="/Home-page/HP.html" alt="LOGO" height="35px"></li>
-            <li class ="x"><a href="Classess.asp">Classess</a></li>
-            <li class ="x"><a href="Timetable.asp">Timetable</a></li>
-            <li class ="x"><a href="Clubs.asp">Clubs</a></li>
-            <li class ="x"><a href="Nutrition.asp">Nutrition</a></li>
-            <li class="login"><a href="/login-page/login.html">Login</a></li>
-          </ul>
+<nav class="navbar navbar-expand-lg" style="background-color: #282A3A; position:fixed; top: 4%; z-index:1;">
+    <div class="container-fluid" style="position: fixed;">
+      <a class="navbar-brand" href="#" style="font-weight: bolder; font-size: x-large; left: 10%;position: relative;">TEAM<span style="color: #C69749;">MEGZ</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav" style="left: 45%; position: relative;">
+          <a class="nav-link active" aria-current="page" href="/Home-page/HP.html" style="color: #fff;">Home</a>
+          <a class="nav-link" href="#" style="color: #fff;">Features</a>
+          <a class="nav-link" href="#" style="color: #fff;">Pricing</a>
+          <!-- <a class="nav-link" href="#" style="color: #fff;">Disabled</a> -->
+        </div>
+      </div>
+      <a style="background-color: #C69749; padding: 14px 16px; border-radius: 12px; text-decoration: none; color: #fff;"  href="/login-page/login.html">
+        Login
+        </a>
+    </div>
+  </nav>
           
     
 <!--First DIV-->    
@@ -28,7 +38,7 @@
         <img class="img-1" src="/Home-page/HomePage Pics/WhatsApp Image 2023-03-10 at 17.24.13.1.jpg" alt="teammegz" style="width:100%;">
         <div class="centered">
           <p class = "sent1"> Welcome to <br> TEAM<span style="color:#C69749;">MEGZ</span> Gyms</p>
-        <form action="https://google.com">
+        <form action="/Reg-page/register.html">
             <input class="button" type="submit"  value="Get Started"  />
         </form></div> 
     </div> 
@@ -51,7 +61,7 @@
           <p class = "sent1"> Become more than you are.</p>
           <p class="sent2">Staying active is great fun and keeps you healthy. </p>
           <p class = "sent3"> check out how you can join in. </p>
-        <form action="https://google.com">
+        <form action="/Home-page/HP.html">
             <input class="button" type="submit"  value="Let's do it"  />
         </form></div> 
     </div> 
@@ -64,27 +74,15 @@
     <div class="footer">
         <p class="about">
             <span style="font-weight:bolder; font-size: 25px;">TEAM</span><span style="font-weight: bolder; color: #C69749; font-size: 25px;">MEGZ</span>
-            <br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-             Sint, dolores repellendus commodi laboriosam voluptate porro sed saepe aliquam,
-              quia atque necessitatibus alias magni earum tempora provident! Eum quo tempore est!
+            <br><br>welcome to team megz , i am ahmed magdy certified personal trainer and physiotherapist , i offer online coaching 24 hours follow up , including diet plans , gym or home workouts , cardio routine , vitamins and supplements if needed , and all of these plans are updated depending on the progress and your goal
 
         </p>
-        <p class="links">
+        <!-- <p class="links">
             <span style="font-weight: bold; font-size: 20px;">Quick Links</span>
-            <!-- <ul style="background-color: black; ">
-                <li class="link" ><a href="Classess.asp">Classess</a></li>
-                <li class="link" ><a href="Timetable.asp">Timetable</a></li>
-                <li class="link" ><a href="Clubs.asp">Clubs</a></li>
-                <li class="link" ><a href="Nutrition.asp">Nutrition</a></li>
-            </ul> -->
+            
 
-        </p>
+        </p> -->
     </div>
-
-
-
-    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -5,23 +5,33 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="/follow-up(2)/CSS/navbar.css" />
         <link rel="stylesheet" type="text/css" href="/follow-up(2)/CSS/follow_up_2.css" />
+        <link rel="stylesheet" href="/bootstrap-5.2.3-dist/css/bootstrap.css">
 
-        <title>Homepage</title>
+        <link rel="icon" type="image/x-icon" href="/Logo.png">
+        <title>TEN DAYS check</title>
     </head>
-    <body>
+    <body style="background-color: #282A3A;">
 
 <!--NAVBAR-->
 
-        <div class="navbar">
-            <ul class="navbarul">
-                <li class ="logo"> <input type="image" name="Logo" src="Logo.png" href="/Homepage/HP.html" alt="LOGO" height="35px"></li>
-                <li class ="x"><a href="Classess.asp">Classess</a></li>
-                <li class ="x"><a href="Timetable.asp">Timetable</a></li>
-                <li class ="x"><a href="Clubs.asp">Clubs</a></li>
-                <li class ="x"><a href="Nutrition.asp">Nutrition</a></li>
-                <li class="login"><a href="/login-page/login.html">Login</a></li>
-            </ul>
+<nav class="navbar navbar-expand-lg" style="background-color: #282A3A; position:fixed; top: 4%; z-index:1;">
+    <div class="container-fluid" style="position: fixed;">
+      <a class="navbar-brand" href="#" style="font-weight: bolder; font-size: x-large; left: 10%;position: relative;">TEAM<span style="color: #C69749;">MEGZ</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav" style="left: 45%; position: relative;">
+          <a class="nav-link active" aria-current="page" href="/Home-page/HP.html" style="color: #fff;">Home</a>
+          <a class="nav-link" href="#" style="color: #fff;">Features</a>
+          <a class="nav-link" href="#" style="color: #fff;">Pricing</a>
+          <!-- <a class="nav-link" href="#" style="color: #fff;">Disabled</a> -->
         </div>
+      </div>
+      <a style="background-color: #C69749; padding: 14px 16px; border-radius: 12px; text-decoration: none; color: #fff;"  href="/login-page/login.html">
+        Login
+        </a>
+    </div>
+  </nav>
 
 
 
@@ -61,10 +71,14 @@
             <p>
                 هل في تطور في اوزانك \ عداتك \ ادائك في تمرين الحديد؟
             </p>
-            <input class="radio-button" type="radio" name="x" value="YES">
-            <label for="YES" style="font-size: medium;">YES</label><br>
-            <input class="radio-button" type="radio" name="x" value="NO">
-            <label for="NO" style="font-size: medium;">NO</label><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div>
         </div>
         <div class="sub-button">
             <input class="button" type="submit"  value="Submit"  />
@@ -83,12 +97,14 @@
                 quia atque necessitatibus alias magni earum tempora provident! Eum quo tempore est!
 
             </p>
-            <p class="links">
+            <!-- <p class="links">
                 <span style="font-weight: bold; font-size: 20px;">Quick Links</span>
                 
 
             </p>
-        </div>
+        </div> -->
 <!--END-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
     </body>
 </html>
