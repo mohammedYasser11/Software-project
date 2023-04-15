@@ -6,6 +6,7 @@ h1{
     position: relative;
     color: #ffffff;
     text-align:center;
+    top: 70px;
 }
 .weight1{
     word-spacing:245px;
@@ -22,6 +23,8 @@ h1{
  .weight4{
     word-spacing:252px;
     margin-right: 20px;
+    position: relative;
+    
 }
 .weight5{
     word-spacing: 245px;
@@ -76,10 +79,10 @@ select {
 .input2{
     position: absolute;
     border: none;
-        border-radius: 50px;
-        background-color:rgb(249, 187, 89) ;
-        width:100px;
-        padding: 10px ;    
+    border-radius: 50px;
+    background-color:rgb(249, 187, 89) ;
+    width:100px;
+    padding: 10px ;    
 
 }
 .input1:hover{
@@ -88,7 +91,7 @@ select {
 }
 .input2:hover{
     background-color: rgb(207, 155, 71);
-      cursor:text;
+    cursor:text;
 }
 .c3{
     position: absolute;
@@ -99,7 +102,7 @@ select {
     position: absolute;
     width: 383px;
     height: 78px;
-     left: 1030px;
+    left: 1030px;
     /* top: 390px; */
 
 
@@ -141,4 +144,8 @@ select {
         background-color: #735f32;
         text-decoration:none;
         border-radius: 50px;
+}
+.form1{
+    position: relative;
+    top: 70px;
 }

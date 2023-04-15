@@ -1,8 +1,8 @@
 .first{
     position: absolute;
-    width: 383px;
+    width: 350px;
     height: 78px;
-    left: 1080px;
+    left: 900px;
     top: 390px;
 
     font-family: 'Halant';
@@ -21,7 +21,7 @@
     position: absolute;
     width: 290px;
     height: 86px;
-    left: 450px;
+    left: 400px;
     top: 367px;
 
     font-family: 'Halant';
@@ -39,11 +39,11 @@
 .third{
     
     position: relative;
-    width: 581px;
+    width: 250px;
     height: 63px;
-    left: 966px;
+    left: 1050px;
     top: 733px;
-
+    margin: 0%;
 
     font-family: 'Halant';
     font-style: normal;
@@ -60,9 +60,9 @@
     position: relative;
     background-color: #C69749;
     border-radius: 38.5px;
-    width: 551px;
+    width: 450px;
     height: 35px;
-    right: 450px;
+    right: 500px;
     top: -55px;
     border: 0px;
 }
