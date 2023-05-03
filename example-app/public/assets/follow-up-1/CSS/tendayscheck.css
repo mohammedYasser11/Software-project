@@ -1,0 +1,70 @@
+.container2 {
+position: relative;
+text-align: center;
+  }
+
+ .ten{ 
+font-family: serif;
+color:rgb(249, 187, 89); 
+position: absolute;
+top: 20%;
+left: 0%;
+line-height: 25px;}
+    .questions{
+      font-size:x-large;
+      word-spacing: 5px;
+      margin-right: 30px;
+      color: white;
+     
+    }
+    .weight1{
+      word-spacing:245px;
+      margin-right: 20px;}
+    .weight2{
+      word-spacing: 210px;
+      margin-right: 20px;}
+    .weight3{
+      word-spacing: 213px;
+      margin-right: 20px;
+    }
+ .input {
+    border: none;
+        border-radius: 50px;
+        background-color:rgb(249, 187, 89) ;
+        width:100px;
+        padding: 10px ;    
+       
+    }
+    .input:hover{
+      background-color: rgb(207, 155, 71);
+        cursor:text;
+    }
+    .word , .word1{
+      word-spacing: 0px;
+      color: white;
+    } 
+  
+    .word0{
+      color: white;
+    }
+    .button{ 
+      background-color: rgb(249, 187, 89) ;
+      font-size: 14px;
+       color:white ;
+        font-family: sans-serif;
+        padding: 15px 40px;
+        border: none;
+        border-radius: 50px;
+        transition: all 0.5s;
+        position: absolute;
+        top: 165%;
+        margin-left:48%;
+      }
+      .button:hover {
+        background-color: rgb(174, 130, 59);
+        cursor: pointer;
+      }
+   
+    
+    
+   
