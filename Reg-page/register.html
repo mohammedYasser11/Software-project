@@ -32,13 +32,17 @@
 			<input type="email" id="email" name="email"placeholder="Email" required>
 			<br>
 			<br>
-			<input type="tel" id="phone" name="phone"placeholder="Phone Number" required>
+			<input type="tel" id="phone" name="phone"placeholder="Phone Number"   pattern="[01]{2}[0-9]{9}" required>
 			<br>
 			<br>
-			<input type="text" id="Password" name="Password"placeholder="Password" required>
+			<input id="password" name="password" type="password" pattern="^\S{6,}$"
+			 onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); 
+			if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="Password" required>
 			<br>
 			<br>
-			<input type="text" id="C.Password" name="C.Password"placeholder="Confirm The Password" required>
+			<input id="password_two" name="password_two" type="password" pattern="^\S{6,}$" 
+			onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');"
+			 placeholder="Verify Password" required>
 			<br>
 			<br>
 			<div class="option">
@@ -60,13 +64,18 @@
 			<!-- <a href="" style="text-decoration: none;">
 				<P class="Next"> </P>
 			</a> -->
-			<button onclick="myFunction()" class="Next">Next</button>
+			<a href="/Qes.html">
+				<button  class="Next">
+					Next
+				</button>
+			</a>
+			
 
-<script>
+<!-- <script>
 function myFunction() {
   location.replace("Qes.html")
 }
-</script>
+</script> -->
 		</form>
 		
 	</div>
