@@ -39,6 +39,14 @@ input[type="file"]{
     color: #C69749;
     top: -50px;
 }
+.img6{
+    position: relative;
+    cursor: pointer;
+    right: -100px;
+    color: #C69749;
+    top: -20px;
+}
+
 .image-container{
     position: relative;
     top: -30px;

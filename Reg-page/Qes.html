@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="CSS/NavBar.css">
     <link rel="icon" type="image/x-icon" href="/Logo.png">
     <link rel="stylesheet" href="/Home-page/CSS/scrollbar.css">
+    <link rel="stylesheet" href="/follow-up(2)/CSS/image-input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/follow up(1)/CSS/tendayscheck.css">
+
 
     <title>Registeration</title>
 </head>
@@ -275,57 +279,86 @@
    <br>
    <div class="first">
     <p>صورك من الاربع اتجاهات</p>
-    <input type="image" src="/Reg-page/img_411489.png" alt="Submit" width="60" height="60" 
-    style="background-color: #C69749; position: relative; right: 120px; top: -110px;" >
-    <input type="image" src="/Reg-page/img_411489.png" alt="Submit" width="60" height="60" 
-    style="background-color: #C69749; position: relative; right: 270px; top: -110px;" >
-    <input type="image" src="/Reg-page/img_411489.png" alt="Submit" width="60" height="60" 
-    style="background-color: #C69749; position: relative; right: 252px; top: -40px;" >
-    <input type="image" src="/Reg-page/img_411489.png" alt="Submit" width="60" height="60" 
-    style="background-color: #C69749;  position: relative; right: 402px; top: -40px;" >
+
+             <input type="file" id="upload-button1" accept="image/*"  >
+            <label class="img1" for="upload-button1">
+                <i class="fa-solid fa-upload"></i>
+            </label>
+
+            <input type="file" id="upload-button2" accept="image/*"  >
+            <label class="img2" for="upload-button2">
+                <i class="fa-solid fa-upload"></i>
+            </label>
+
+            <input type="file" id="upload-button3" accept="image/*"  >
+            <label class="img3" for="upload-button3">
+                <i class="fa-solid fa-upload"></i>
+            </label>
+
+            <input type="file" id="upload-button4" accept="image/*"  >
+            <label class="img4" for="upload-button4">
+                <i class="fa-solid fa-upload"></i>
+            </label>
+    
  </div>
+ 
  <div class="second">
     <p dir="rtl">صوره inbody</p>
-    <input type="image" src="/Reg-page/img_411489.png" alt="Submit" width="60" height="60" 
-    style="background-color: #C69749;position: relative; top:-70px;left:120px ;">
+    <div class="container">
+        <figure class="image-container">
+            <img id="chosen-image">
+        </figure>
+
+        <input type="file" id="upload-button5" accept="image/*"  >
+        <label class="img6" for="upload-button5">
+            <i class="fa-solid fa-upload"></i>
+        </label>
+
+    </div>
  </div>
+ <br>
+ <br>
+ <br>
    <br>
    <br>
    <br>
    <h2 dir="rtl"> ملحوظات هامه</h2>
    <br>
    <div dir="rtl">
-    <ol>
-    <li>يجب توافر ميزان للاكل</li>
-    <br>
-    <li>يجب الالتزام بتصوير الوجبات وتبعتها علي snapchat (megzzo_69)</li>
-    <br>
-    <li>لازم تصور ادائك في التمرين عشان اقيمك ونطلع احسن النتائج</li>
-    <br>
-    <li>لو حصل وبوظت الدايت لازم تكلمني علي طول</li>
-    <br>
-    <li>لازم تكلمني كل 10 ايام عشان اتابع تقدمك ولو احتجت تكلمني في اي وقت انا معاك</li>
-    <br>
-    <li>لما تلعب كارديو لو انت في الجيم لازم تصوؤلي الجهاز اللي انت لعبت عليه ولو في الشارع فخد اسكرين شوت من برنامج nike run club</li>
-    <br>
-    <li>:في برامج لازم تحملها</li>
-    </ol>
-    <ol>
-        <li> واحد من دول لمتابعه تطور الاوزان في التمارين (progression/hevy/repcount)</li>
+        <ol>
+        <li>يجب توافر ميزان للاكل</li>
         <br>
-        <li>برنامج لمتابعه الخطوات pacer pedometer</li>
-    </ol>
+        <li>يجب الالتزام بتصوير الوجبات وتبعتها علي snapchat (megzzo_69)</li>
+        <br>
+        <li>لازم تصور ادائك في التمرين عشان اقيمك ونطلع احسن النتائج</li>
+        <br>
+        <li>لو حصل وبوظت الدايت لازم تكلمني علي طول</li>
+        <br>
+        <li>لازم تكلمني كل 10 ايام عشان اتابع تقدمك ولو احتجت تكلمني في اي وقت انا معاك</li>
+        <br>
+        <li>لما تلعب كارديو لو انت في الجيم لازم تصوؤلي الجهاز اللي انت لعبت عليه ولو في الشارع فخد اسكرين شوت من برنامج nike run club</li>
+        <br>
+        <li>:في برامج لازم تحملها</li>
+        </ol>
+        <ol>
+            <li> واحد من دول لمتابعه تطور الاوزان في التمارين (progression/hevy/repcount)</li>
+            <br>
+            <li>برنامج لمتابعه الخطوات pacer pedometer</li>
+        </ol>
    </div>
    <br>
    <br>
-   <br>
-   <button onclick="myFunction()" class="Submit">Submit</button>
-			<script>
-			function myFunction() {
-                alert("Thank you for joining us");
-			location.replace("HP.html")
-			}
-			</script>
+   <br><br>
+   <br><br>
+   <br><br>
+   <br><br>
+   <br><br>
+   <br><br>
+   <form action="/index.html" >
+    <input class="button" type="submit"  value="Submit" style="top: 1600px;" />
+    </form>  
+
+   <script src="/follow-up(2)/js/img.js"></script>
 
 </body>
 </html>
