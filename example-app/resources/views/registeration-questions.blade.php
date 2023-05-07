@@ -17,44 +17,51 @@
             <li class ="x"><a href="/">Home</a></li>
             <li class ="x"><a href="/transformations">Transformations</a></li>
             <li class ="x"><a href="/follow-up-step-one">Follow up</a></li>
-            <li class="login"><a href="/login">Login</a></li>
-        </ul>
+            @guest
+                <li class="login"><a href="/login">Login</a></li>
+            @endguest
+
+            @auth
+                <li class="login"><a href="{{ route('logout') }}">logout</a></li>
+            @endauth       
+           </ul>
     </div>
 
 <h1>ANSWER THIS QUISTIONS</h1>
-<form class="form1">
+<form class="form1" method="POST" action="{{ route('save_user_data') }}" enctype="multipart/form-data">
+    @csrf
     <div dir="rtl" class="weight4">
             <label class="word0">سنك</label>
-        <input  type="text" class="input">
+        <input  type="text" class="input" name="age">
         </div>
         <br>
         <div dir="rtl" class="weight5">
             <label class="word0">طولك</label>
-        <input  type="text" class="input">
+        <input  type="text" class="input" name="height">
         </div>
         <br>
         <div dir="rtl" class="weight1">
-            <label class="word0">وزنك</label>
-        <input  type="text" class="input">
+            <label class="word0" >وزنك</label>
+        <input  type="text" class="input" name="weight">
         </div>
         <br>
         <div dir="rtl" class="weight2">
             <label class="word">مقاس الوسط</label>
-        <input  type="text" class="input">
+        <input  type="text" class="input" name="waist_size">
         </div>
         <br>
         <div dir="rtl" class="weight3">
             <label class="word1">مقاس البطن</label>
-        <input  type="text" class="input">
+        <input  type="text" class="input" name="abdominal_size">
         </div>
         <div dir="rtl" class="weight6">
             <label class="word1">مقاس محيط الصدر
                 <br>
                 (من الكتف اللي الكتف)</label>
-        <input  type="text" class="input">
+        <input  type="text" class="input" name="chest_size">
         </div>
         
-   </form>
+   {{-- </form> --}}
    <br>
    <br>
    <div dir="rtl"  >
@@ -69,11 +76,11 @@
                 اليمين\اليسار
             </td>
             <td>
-                <input  type="text" class="input">
+                <input  type="text" class="input" name="thigh_size_r">
                 <label> R</label>
             </td>
             <td>
-                <input  type="text" class="input">
+                <input  type="text" class="input" name="thigh_size_l">
                 <label> L</label>
             </td>
         </tr>
@@ -84,12 +91,12 @@
                  اليمين\اليسار  
             </td>
             <td>
-                <input  type="text" class="input">
+                <input  type="text" class="input" name="arm_size_r">
                 <label> R</label>
             </td>
             <td>
                 
-                <input  type="text" class="input">
+                <input  type="text" class="input" name="arm_size_l">
                 <label> L</label>
             </td>
         </tr>
@@ -99,11 +106,11 @@
               اليمين\اليسار
             </td>
             <td>
-                <input  type="text" class="input">
+                <input  type="text" class="input" name="calf_size_r">
                 <label> R</label>
             </td>
             <td>
-                <input  type="text" class="input">
+                <input  type="text" class="input" name="calf_size_l">
                 <label> L</label>
             </td>
         </tr>
@@ -119,11 +126,11 @@
                     معدل النشاط
                 </td>
                 <td>
-                    <select id="sup." name="sup" required>
-                        <option value="">معدل النشاط</option>
-                        <option value="">قليل الحركه</option>
-                        <option value="">متوسط الحركه</option>
-                        <option value="">كثير الحركه</option>
+                    <select id="sup." name="acitve_rate" required>
+                        {{-- <option value="">معدل النشاط</option> --}}
+                        <option value="low">قليل الحركه</option>
+                        <option value="medium">متوسط الحركه</option>
+                        <option value="high">كثير الحركه</option>
                     </select>
                 </td>
             </tr>
@@ -132,8 +139,8 @@
                    هتنزل الجم كام يوم
                 </td>
                 <td>
-                    <select id="sup." name="sup" required>
-                        <option value="">هتنزل الجم كام يوم</option>
+                    <select id="sup." name="gym_per_week" required>
+                        {{-- <option value="">هتنزل الجم كام يوم</option> --}}
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
@@ -147,8 +154,8 @@
                    هدفك ايه في العموم؟
                 </td>
                 <td>
-                    <select id="sup." name="sup" required>
-                        <option value="">هدفك ايه في العموم؟</option>
+                    <select id="sup." name="goal" required>
+                        {{-- <option value="">هدفك ايه في العموم؟</option> --}}
                         <option value="lean muscls mass">lean muscls mass </option>
                         <option value="bulking">bulking</option>
                         <option value="fat loss">fat loss</option>
@@ -161,13 +168,13 @@
                    هدفك ايه من التمرين؟
                 </td>
                 <td>
-                    <select id="sup." name="sup" required>
-                        <option value="">هدفك ايه من التمرين؟</option>
-                        <option value="">(ضخامه عضليه)hypertrophy</option>
-                        <option value="">(قوه عضليه)strenght</option>
-                        <option value="">(قوه+ضخامه)powerbuilding</option>
-                        <option value="">(قدره علي التحمل)endurance</option>
-				        <option value="">(مرونه)flexibility</option>
+                    <select id="sup." name="training_goal" required>
+                        {{-- <option value="">هدفك ايه من التمرين؟</option> --}}
+                        <option value="hypertrophy">(ضخامه عضليه)hypertrophy</option>
+                        <option value="strenght">(قوه عضليه)strenght</option>
+                        <option value="powerbuilding">(قوه+ضخامه)powerbuilding</option>
+                        <option value="endurance">(قدره علي التحمل)endurance</option>
+				        <option value="flexibility">(مرونه)flexibility</option>
 
                     </select>
                 </td>
@@ -177,8 +184,8 @@
                    عدد الوجبات الذي تريده
                 </td>
                 <td>
-                    <select id="sup." name="sup" required>
-                        <option value="">عدد الوجبات الذي تريده</option>
+                    <select id="sup." name="meals_no" required>
+                        {{-- <option value="">عدد الوجبات الذي تريده</option> --}}
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
@@ -205,32 +212,32 @@
 <br>
 <br>
 <br>
-<form>
+{{-- <form> --}}
     <div dir="rtl" class="">
             <label class="word0">اي مكملات غذائيه عاوز تخادها</label>
-        <input  type="text" class="input1">
+        <input  type="text" class="input1" name="supplements">
         </div>
         <br>
         <br>
         <div dir="rtl" class="">
             <label class="word0">عندك حساسيه من اي اكل</label>
-        <input  type="text" class="input1">
+        <input  type="text" class="input1" name="allergy">
         </div>
         <br>
         <br>
         <div dir="rtl" class="">
             <label class="word0">اي الاكل اللي انت مش بتحبه</label>
-        <input  type="text" class="input1">
+        <input  type="text" class="input1" name="food_disliked">
         </div>
         <br>
         <br>
         <div dir="rtl" class="">
             <label class="word">مصدر البروتين عاوزه من فين</label>
-        <input  type="text" class="input1">
+        <input  type="text" class="input1" name="protien_source">
         </div>
         <br>
         <br>
-   </form>
+   {{-- </form> --}}
    <div class="c3">
     <table dir="rtl" cellspacing="20px" width="150%" style="margin-right: 50%;">
         <tbody>
@@ -240,7 +247,7 @@
                     مصدر الدهون عاوزه من فين
                 </td>
                 <td>
-                    <input  type="text" class="input">
+                    <input  type="text" class="input" name="fat_source">
                 </td>
             </tr>
             <tr>
@@ -248,7 +255,7 @@
                    مصدر النشويات عاوزه من فين
                 </td>
                 <td>
-                    <input  type="text" class="input">
+                    <input  type="text" class="input" name="carb_source">
                 </td>
             </tr>
             <tr>
@@ -256,7 +263,7 @@
                      مصدر الفاكهه عاوزه من فين 
                 </td>
                 <td>
-                    <input  type="text" class="input">
+                    <input  type="text" class="input" name="fruit_source">
                 </td>
             </tr>
             <tr>
@@ -264,7 +271,7 @@
                     مصدرالخضار عاوزه من فين
                 </td>
                 <td>
-                    <input  type="text" class="input">
+                    <input  type="text" class="input" name="vege_source">
                 </td>
             </tr>
         </tbody>
@@ -275,18 +282,17 @@
    <br>
    <div class="first">
     <p>صورك من الاربع اتجاهات</p>
-    <input type="image" src="{{asset('assets/Reg-page/img_411489.png')}}" alt="Submit" width="60" height="60" 
-    style="background-color: #C69749; position: relative; right: 120px; top: -110px;" >
-    <input type="image" src="{{asset('assets/Reg-page/img_411489.png')}}" alt="Submit" width="60" height="60" 
+    <input type="file"  alt="Submit" width="60" height="60" name="side_1"  style="background-color: #C69749; position: relative; right: 120px; top: -110px;" >
+    <input type="file" alt="Submit" width="60" height="60" name="side_2"
     style="background-color: #C69749; position: relative; right: 270px; top: -110px;" >
-    <input type="image" src="{{asset('assets/Reg-page/img_411489.png')}}" alt="Submit" width="60" height="60" 
+    <input type="file" src="{{asset('assets/Reg-page/img_411489.png')}}" name="side_3" alt="Submit" width="60" height="60" 
     style="background-color: #C69749; position: relative; right: 252px; top: -40px;" >
-    <input type="image" src="{{asset('assets/Reg-page/img_411489.png')}}" alt="Submit" width="60" height="60" 
+    <input type="file" src="{{asset('assets/Reg-page/img_411489.png')}}" name="side_4" alt="Submit" width="60" height="60" 
     style="background-color: #C69749;  position: relative; right: 402px; top: -40px;" >
  </div>
  <div class="second">
     <p dir="rtl">صوره inbody</p>
-    <input type="image" src="{{asset('assets/Reg-page/img_411489.png')}}" alt="Submit" width="60" height="60" 
+    <input type="file" name="inbody" src="{{asset('assets/Reg-page/img_411489.png')}}" alt="Submit" width="60" height="60" 
     style="background-color: #C69749;position: relative; top:-70px;left:120px ;">
  </div>
    <br>
@@ -319,13 +325,15 @@
    <br>
    <br>
    <br>
-   <button onclick="myFunction()" class="Submit">Submit</button>
-			<script>
+   <button type="submit" class="Submit">Submit</button>
+			{{-- <script>
 			function myFunction() {
                 alert("Thank you for joining us");
 			location.replace("HP.html")
 			}
-			</script>
+			</script> --}}
+
+        </form>
 
 </body>
 </html>

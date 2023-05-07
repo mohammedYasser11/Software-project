@@ -21,16 +21,26 @@
         </ul>
     </div>
             <div class="Email">
-                <form action="submit-form.php" method="post" onsubmit="return validateForm()"> 
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+                <form method="POST" action="{{ route('login') }}"> 
+                    @csrf
                     <input type="email" id="email" name="email"placeholder="Email" required>
                     <br>
                     <br>
-                    <input type="password" id="Password" name="Password"placeholder="Password" required>
+                    <input type="password" id="Password" name="password" placeholder="Password" required>
                         <br>
                         <a href="/register">
                             <p class="link2">Create an account</p>
                         </a>
-                        <button class="login1" >login</button>
+                        <button type="submit" class="login1" >login</button>
                 </form>
             </div>
          <div class="footer1" >

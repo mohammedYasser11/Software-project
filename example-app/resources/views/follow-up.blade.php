@@ -18,8 +18,13 @@
                 <li class ="x"><a href="/">Home</a></li>
                 <li class ="x"><a href="/transformations">Transformations</a></li>
                 <li class ="x"><a href="/follow-up-step-one">Follow up</a></li>
-                <li class="login"><a href="/login">Login</a></li>
-            </ul>
+                @guest
+                    <li class="login"><a href="/login">Login</a></li>
+                @endguest
+        
+                @auth
+                    <li class="login"><a href="{{ route('logout') }}">logout</a></li>
+                @endauth            </ul>
         </div>
         <div class="container2">
             <img height="600px" src="{{  asset('assets/follow-up-1/WhatsApp Image 2023-03-17 at 01.24.53.jpeg')}}" alt="teammegz" style="width:100%;">

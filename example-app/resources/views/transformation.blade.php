@@ -20,8 +20,13 @@
             <li class ="x"><a href="/">Home</a></li>
             <li class ="x"><a href="/transformations">Transformations</a></li>
             <li class ="x"><a href="/follow-up-step-one">Follow up</a></li>
-            <li class="login"><a href="/login">Login</a></li>
-        </ul>
+            @guest
+                <li class="login"><a href="/login">Login</a></li>
+            @endguest
+
+            @auth
+                <li class="login"><a href="{{ route('logout') }}">logout</a></li>
+            @endauth        </ul>
     </div>
 <br><br>
     <h1 class="heading" style="color: white; ">🍎🍏Healthy living is not a diet. It's a lifestyle.🍏🍎</h1>

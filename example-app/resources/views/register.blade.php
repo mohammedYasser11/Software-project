@@ -25,24 +25,25 @@
 		     <h1>  Join Us Now  </h1>
 		     <h2>And Feel The Power</h2>
 		    </div>
-		    <form action="submit-form.php" method="post" onsubmit="return validateForm()">
+		    <form method="POST" action="{{ route('register') }}">
+				@csrf
 			<input type="text" id="name" name="name" placeholder="Name" required>
 			<br>
 			<br>
-			<input type="email" id="email" name="email"placeholder="Email" required>
+			<input type="email" id="email" name="email" placeholder="Email" required>
 			<br>
 			<br>
-			<input type="tel" id="phone" name="phone"placeholder="Phone Number" required>
+			<input type="tel" id="phone" name="phone_number" placeholder="Phone Number" required>
 			<br>
 			<br>
-			<input type="text" id="Password" name="Password"placeholder="Password" required>
+			<input type="password" id="Password" name="password" placeholder="Password" required>
 			<br>
 			<br>
-			<input type="text" id="C.Password" name="C.Password"placeholder="Confirm The Password" required>
+			<input type="password" id="C.Password" name="password_confirmation" placeholder="Confirm The Password" required>
 			<br>
 			<br>
 			<div class="option">
-			<select id="sup." name="sup" required>
+			<select id="sup." name="membership_type" required>
 				<option value="">Membership Type</option>
 				<option value="diet">Diet</option>
 				<option value="workout">Workout</option>
@@ -50,7 +51,7 @@
 			</select>
 			<br>
 			<br>
-			<select id="membership" name="membership" required>
+			<select id="membership" name="subscribtion" required>
 				<option value="" name="Subscribtion">Subscribtion</option>
 				<option value="1 month">1 month</option>
 				<option value="3 months">3 month</option>
@@ -60,14 +61,15 @@
 			<!-- <a href="" style="text-decoration: none;">
 				<P class="Next"> </P>
 			</a> -->
-			<button onclick="myFunction()" class="Next">Next</button>
+			<button type="submit"class="Next">Next</button>
+		</form>
 
 <script>
 function myFunction() {
   location.replace("Qes.html")
 }
 </script>
-		</form>
+		
 		
 	</div>
 </body>
