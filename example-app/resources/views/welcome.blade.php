@@ -46,9 +46,8 @@
         <img class="img-2" src="{{ asset('assets/Home-page/HomePage Pics/WhatsApp Image 2023-03-10 at 17.24.12.jpg') }}" width="200px">
         <img class="img-3" src="{{ asset('assets/Home-page/HomePage Pics/WhatsApp Image 2023-03-10 at 17.22.09(1).jpg') }}" width="200px">
         <p class="sent4">Meet your new body</p>
-        <p class="sent5">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-             Ducimus quasi aperiam unde suscipit commodi dignissimos fugiat accusantium itaque earum,<br>
-             eaque asperiores cum ab vel tenetur dolor, architecto officia! Beatae, veniam.</p>
+        <p class="sent5">The pain you feel today will be the strenght you feel tommorow.<br>
+        </p>
 
     </div>
 

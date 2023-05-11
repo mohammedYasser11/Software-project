@@ -30,7 +30,7 @@
     </div>
 <br><br>
     <h1 class="heading" style="color: white; ">🍎🍏Healthy living is not a diet. It's a lifestyle.🍏🍎</h1>
-        <p style="color: #C69749; position: relative; top: 50px;">********************************************************************************************************************************************************************************************</p>
+
     <div class="slider-section">
         <div class="slider" style="position: relative; top: 50px;">
             <div class="slider-img">
@@ -63,7 +63,7 @@
             </div>
         </div>
     </div>
-        <p style="color: #C69749; position: relative; top: 50px;">********************************************************************************************************************************************************************************************</p>
+        
         <br>
 
 </body>
