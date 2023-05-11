@@ -51,7 +51,9 @@ Route::get('/registeration-questions', function () {
 
 Route::post('/registeration-questions', [RegisteredUserController::class, 'save_user_data'])->name('save_user_data');
 
-
+Route::get('/profile-page', function () {
+    return view('profile-page');
+});
 
 
 // Route::get('/dashboard', function () {

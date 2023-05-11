@@ -27,6 +27,7 @@
 
         @auth
             <li class="login"><a href="{{ route('logout') }}">logout</a></li>
+            <li class ="login" style="left: 1250px;"><a href="/profile-page">Profile</a></li>
         @endauth
     </ul>
 </div>
@@ -37,8 +38,8 @@
         <img class="img-1" src="{{ asset('assets/Home-page/HomePage Pics/WhatsApp Image 2023-03-10 at 17.24.13.1.jpg') }}" alt="teammegz" style="width:100%;">
         <div class="centered">
           <p class = "sent1"> Welcome to <br> TEAM<span style="color:#C69749;">MEGZ</span> Gyms</p>
-        <form action="{{ asset('assets/Reg-page/register.html') }}">
-            <input class="button" type="submit"  value="Get Started"  />
+        <form>
+            <a class="button" href="/register" style="text-decoration: none;"> Get Started</a>
         </form></div> 
     </div> 
 <!--Second DIV-->    
@@ -59,8 +60,9 @@
           <p class = "sent1"> Become more than you are.</p>
           <p class="sent2">Staying active is great fun and keeps you healthy. </p>
           <p class = "sent3"> check out how you can join in. </p>
-        <form action="{{ asset('assets/Reg-page/register.html') }}">
-            <input class="button" type="submit"  value="Let's do it"  />
+        <form>
+            <a class="button" href="/register" style="text-decoration: none;"> Let's do it</a>
+            {{-- <input class="button" type="submit"  value="Let's do it"  /> --}}
         </form></div> 
     </div> 
 

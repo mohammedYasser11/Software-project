@@ -4,29 +4,35 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="/bootstrap-5.2.3-dist/css/bootstrap.css">
-        <link rel="stylesheet" href="css/navbar.css">
-        <link rel="stylesheet" href="css/all.min.css">
-        <link rel="stylesheet" href="css/profile page.css">
+        <link rel="stylesheet" href="{{ asset('assets/bootstrap-5.2.3-dist/css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/profile-page/css/navbar.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/profile-page/css/all.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/profile-page/css/profile page.css') }}">
     </head>
     <body style="background-color: #282A3A;">
           <!--NAVBAR-->
 
 <div class="navbar">
   <ul class="navbarul">
-      <li class ="logo"><a class="navbar-brand" href="/index.html" style="font-weight: bolder; font-size: x-large; left: 10%;position: relative;"><span style="color: #fff;">TEAM</span><span style="color: #C69749;">MEGZ</span></a>
+      <li class ="logo"><a class="navbar-brand" href="/" style="font-weight: bolder; font-size: x-large; left: 10%;position: relative;"><span style="color: #fff;">TEAM</span><span style="color: #C69749;">MEGZ</span></a>
       </li>
-      <li class ="x"><a href="/index.html">Home</a></li>
-      <li class ="x"><a href="/transformation-page/transformation.html">Transformations</a></li>
-      <li class ="x"><a href="/follow up(1)/tendayscheck.html">Follow up</a></li>
-      <li class ="x"><a href="/profile-page/profilepage.html">Profile</a></li>
-      <li class="login"><a href="/login-page/login.html">Login</a></li>
+      <li class ="x"><a href="/">Home</a></li>
+        <li class ="x"><a href="/transformations">Transformations</a></li>
+        <li class ="x"><a href="/follow-up-step-one">Follow up</a></li>
+        @guest
+            <li class="login"><a href="/login">Login</a></li>
+        @endguest
+
+        @auth
+            <li class="login"><a href="{{ route('logout') }}">logout</a></li>
+            <li class ="login" style="left: 1250px;"><a href="/profile-page">Profile</a></li>
+        @endauth  
   </ul>
 </div>
            <div class="row">  
              <div class="column">
                     <label for="file" id="plus">
-                        <img src="WhatsApp Image 2023-04-22 at 23.42.39.jpeg" class="photo1">
+                        <img src="{{ asset('assets/profile-page/WhatsApp Image 2023-04-22 at 23.42.39.jpeg') }}" class="photo1">
                      <span class="plus1">+</span>
                     <input type="file" class="input0" id="file">
                     </label>
@@ -87,7 +93,7 @@
                        
                       </tr>
                     <tr>
-                      <td>Stretch after training
+                      <td>Stretches after training
                         <img src="stretching-exercises.png" alt="" style="width:30px">
                       </td>
                         <td>
@@ -104,7 +110,7 @@
                  <table dir="rtl"  style="font-size: larger;" >
                   <tbody>
                     <tr>
-                      <td>Deit  <span class="input3"><i class="fa-solid fa-apple-whole"></i>
+                      <td>Diet  <span class="input3"><i class="fa-solid fa-apple-whole"></i>
                       </span></td>
                       <td>
                           <label for="file" >

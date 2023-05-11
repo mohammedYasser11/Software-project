@@ -24,6 +24,7 @@
         
                 @auth
                     <li class="login"><a href="{{ route('logout') }}">logout</a></li>
+                    <li class ="login" style="left: 1250px;"><a href="/profile-page">Profile</a></li>
                 @endauth            </ul>
         </div>
         <div class="container2">
