@@ -17,16 +17,7 @@ line-height: 25px;}
       color: white;
      
     }
-    .weight1{
-      word-spacing:245px;
-      margin-right: 20px;}
-    .weight2{
-      word-spacing: 210px;
-      margin-right: 20px;}
-    .weight3{
-      word-spacing: 213px;
-      margin-right: 20px;
-    }
+   
  .input {
     border: none;
         border-radius: 50px;
@@ -39,14 +30,7 @@ line-height: 25px;}
       background-color: rgb(207, 155, 71);
         cursor:text;
     }
-    .word , .word1{
-      word-spacing: 0px;
-      color: white;
-    } 
-  
-    .word0{
-      color: white;
-    }
+    
     .button{ 
       background-color: rgb(249, 187, 89) ;
       font-size: 14px;
@@ -57,8 +41,8 @@ line-height: 25px;}
         border-radius: 50px;
         transition: all 0.5s;
         position: absolute;
-        top: 165%;
-        margin-left:48%;
+        top: 1350px;
+        margin-left:50%;
       }
       .button:hover {
         background-color: rgb(174, 130, 59);
