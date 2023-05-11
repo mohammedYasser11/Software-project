@@ -36,7 +36,7 @@
            <p class="questions" dir="rtl" >الاسئله دي تجاوب عليها علي اساس ال 10 ايام الفاتوا مش بشكل عام </p>
          </div>
          <br><br>
-     <form>
+     {{-- <form>
         <div dir="rtl" class="weight1">
             <label class="word0">وزنك</label>
         <input  type="text" class="input">
@@ -51,7 +51,35 @@
             <label class="word1">مقاس البطن</label>
         <input  type="text" class="input">
         </div>
-   </form>
+   </form> --}}
+   <div dir="rtl"  style="color: white;">
+    <table dir="rtl" cellspacing="40px"   >
+       <tbody>
+           <tr>
+               <td >وزنك
+               </td>
+               <td>
+                   <input  type="text" class="input">
+               </td>
+           </tr>
+           <tr>
+               <td> مقاس الوسط 
+               </td>
+               <td>
+                   <input  type="text" class="input">
+               </td>
+           </tr>
+           <tr>
+               <td>مقاس البطن
+               </td>
+               <td>
+                   <input  type="text" class="input">
+               </td>
+           </tr>
+       </tbody>
+    </table>
+    </div>
+    {{-- --------------- --}}
    <br>
    <br>
    <div dir="rtl"   style="color: white;">
@@ -106,7 +134,7 @@
     </tbody>
  </table>
 </div>
-<div style="position: absolute;top: 95%;left: 10%;
+<div style="position: absolute;top: 710px;
  color: white;
 ">
     <table dir="rtl" cellspacing="30px" width="150%" style="margin-right: 50%;">
