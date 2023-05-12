@@ -54,8 +54,8 @@ class RegisteredUserController extends Controller
         // event(new Registered($user));
 
         Auth::login($user);
+        return redirect('/registeration-questions');
 
-        return redirect(RouteServiceProvider::HOME);
     }
 
 
@@ -113,6 +113,6 @@ class RegisteredUserController extends Controller
         $user_data->inbody = $inbody ;
         
         $user_data->save();
-        return $request;
+        return redirect(RouteServiceProvider::HOME);
     }
 }

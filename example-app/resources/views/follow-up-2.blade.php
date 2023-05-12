@@ -37,26 +37,27 @@
     </div>
 
 
-
+    <form action="{{ route('follow-up-step-two')}}" method="post" enctype="multipart/form-data">
+        @csrf
         <div class="first">
-
+            <input type="hidden" name="row_id" value="{{ $_GET['row_id']}}">
             <p>صورك من الاربع اتجاهات</p>
-            <input type="file" id="upload-button1" accept="image/*"  >
+            <input type="file" name="side_1" id="upload-button1" accept="image/*"  >
             <label class="img1" for="upload-button1">
                 <i class="fa-solid fa-upload"></i>
             </label>
 
-            <input type="file" id="upload-button2" accept="image/*"  >
+            <input type="file" name="side_2" id="upload-button2" accept="image/*"  >
             <label class="img2" for="upload-button2">
                 <i class="fa-solid fa-upload"></i>
             </label>
 
-            <input type="file" id="upload-button3" accept="image/*"  >
+            <input type="file" name="side_3" id="upload-button3" accept="image/*"  >
             <label class="img3" for="upload-button3">
                 <i class="fa-solid fa-upload"></i>
             </label>
 
-            <input type="file" id="upload-button4" accept="image/*"  >
+            <input type="file" name="side_4" id="upload-button4" accept="image/*"  >
             <label class="img4" for="upload-button4">
                 <i class="fa-solid fa-upload"></i>
             </label>
@@ -69,7 +70,7 @@
                     <img id="chosen-image">
                 </figure>
     
-                <input type="file" id="upload-button5" accept="image/*"  >
+                <input type="file" name="steps_per_day" id="upload-button5" accept="image/*"  >
                 <label class="img5" for="upload-button5">
                     <i class="fa-solid fa-upload"></i>
                 </label>
@@ -80,17 +81,17 @@
 
         <div class="third">
             <p>هل وجهتك اي صعوبة بالتمرين؟</p>
-            <input class="text-box" type="text"/>
+            <input class="text-box" name="training_diff" type="text"/>
         </div>
         <div class="third">
             <p> ؟cheatmeal عايز<br>اكتب عايزها ايه(هتتحدد علي حسب النتيجة)</p>
-            <input class="text-box" type="text"/>
+            <input class="text-box" name="cheat_meal" type="text"/>
         </div>
         <div class="third" >
             <br>
             <br>
             <p>عايز تغير نوع اكل معين في الدايت؟</p>
-            <input class="text-box" type="text"/>
+            <input class="text-box" name="diet_edit" type="text"/>
         </div>
         <div class="third">
             <br>
@@ -98,26 +99,28 @@
             <br>
             <br>
             <p>جودة و عدد ساعات نومك؟</p>
-            <input class="text-box" type="text"/>
+            <input class="text-box" name="sleeping_hrs" type="text"/>
         </div>
         <div class="fourth">
             <p>
                 هل في تطور في اوزانك \ عداتك \ ادائك في تمرين الحديد؟
             </p>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <input class="form-check-input" type="radio" name="progress" id="inlineRadio1" value="true">
                 <label class="form-check-label" for="inlineRadio1">Yes</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <input class="form-check-input" type="radio" name="progress" id="inlineRadio2" value="false">
                 <label class="form-check-label" for="inlineRadio2">No</label>
               </div>
         </div>
         <br>
         <br>
         <div class="sub-button">
-            <input class="button" type="submit"  value="Submit"  />
+            <button class="button" type="submit"  value="Submit" >Submit </button>
         </div>
+
+    </form>
 
 
 

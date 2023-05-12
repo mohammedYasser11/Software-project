@@ -42,11 +42,11 @@
                     <tbody>
                         <tr>
                             <td>الاسم:</td>
-                            <td><input  type="text" class="input1"></td>
+                            <td><input  type="text" class="input1" value="{{ $user['name']}}"></td>
                         </tr>
                         <tr>
                             <td>رقم التليفون:</td>
-                            <td><input  type="text" class="input1"></td>
+                            <td><input  type="text" class="input1" value="{{ $user['phone_number']}}"></td>
                         </tr>
                     </tbody>
                   </table>
@@ -59,7 +59,7 @@
                   <tbody>
                      <tr>
                       <td>تاريخ الاشتراك:</td>
-                      <td><input  type="date" class="input1"></td>
+                      <td><input  type="date" class="input1" value="{{ $user['created_at']}}"></td>
                       </tr>
                    </tbody>
                   </table>

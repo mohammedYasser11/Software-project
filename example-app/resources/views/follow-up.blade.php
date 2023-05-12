@@ -53,6 +53,8 @@
         <input  type="text" class="input">
         </div>
    </form> --}}
+   <form action="{{ route('follow-up-step-one')}}" method="POST">
+    @csrf
    <div dir="rtl"  style="color: white;">
     <table dir="rtl" cellspacing="40px"   >
        <tbody>
@@ -60,21 +62,21 @@
                <td >وزنك
                </td>
                <td>
-                   <input  type="text" class="input">
+                   <input  type="text" name="weight" class="input">
                </td>
            </tr>
            <tr>
                <td> مقاس الوسط 
                </td>
                <td>
-                   <input  type="text" class="input">
+                   <input  type="text" name="waist_size" class="input">
                </td>
            </tr>
            <tr>
                <td>مقاس البطن
                </td>
                <td>
-                   <input  type="text" class="input">
+                   <input  type="text" name="abdominal_size" class="input">
                </td>
            </tr>
        </tbody>
@@ -94,11 +96,11 @@
                 اليمين\اليسار
             </td>
             <td>
-                <input  type="text" class="input">
+                <input  type="text" name="thigh_size_r" class="input">
                 <label> R</label>
             </td>
             <td>
-                <input  type="text" class="input">
+                <input  type="text" name="thigh_size_l" class="input">
                 <label> L</label>
             </td>
         </tr>
@@ -109,12 +111,12 @@
                  اليمين\اليسار  
             </td>
             <td>
-                <input  type="text" class="input">
+                <input  type="text" name="arm_size_r" class="input">
                 <label> R</label>
             </td>
             <td>
                 
-                <input  type="text" class="input">
+                <input  type="text" name="arm_size_l" class="input">
                 <label> L</label>
             </td>
         </tr>
@@ -124,11 +126,11 @@
               اليمين\اليسار
             </td>
             <td>
-                <input  type="text" class="input">
+                <input  type="text" name="calf_size_r" class="input">
                 <label> R</label>
             </td>
             <td>
-                <input  type="text" class="input">
+                <input  type="text" name="calf_size_l" class="input">
                 <label> L</label>
             </td>
         </tr>
@@ -148,7 +150,7 @@
                     (من الكتف اللي الكتف)
                 </td>
                 <td>
-                    <input  type="text" class="input">
+                    <input  type="text" name="chest_size" class="input">
                 </td>
             </tr>
         
@@ -158,7 +160,7 @@
                     %
                 </td>
                 <td>
-                    <input  type="text" class="input">
+                    <input  type="text" name="diet_comit" class="input">
                 </td>
             </tr>
             <tr>
@@ -167,7 +169,7 @@
                     %
                 </td>
                 <td>
-                    <input  type="text" class="input">
+                    <input  type="text" name="cardio_comit" class="input">
                 </td>
             </tr>
             <tr>
@@ -176,7 +178,7 @@
                     %
                 </td>
                 <td>
-                    <input  type="text" class="input">
+                    <input  type="text" name="training_comit" class="input">
                 </td>
             </tr>
         </tbody>
@@ -184,7 +186,7 @@
 </div>
     </body>
     {{-- <form action="/follow-up(2)/follow_up_2.html"> --}}
-        <a class="button" href="/follow-up-step-two"> next</a>
+        <button class="button" type="submit"> next</button>
      {{-- </form> --}}
     </div> 
 </html>
