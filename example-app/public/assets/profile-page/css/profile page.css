@@ -1,0 +1,122 @@
+
+.photo1{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+
+
+.input0{
+    display: none;
+}
+label{
+    cursor: pointer;
+}
+.plus1{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+#plus{
+    font-size: 50px;
+    position: relative;
+    margin-left: 10%;
+    
+    color: white;
+}
+.input1 {
+ border: none; 
+ border-radius: 50px;
+background-color:rgb(249, 187, 89) ;
+ width:400px;
+ padding: 10px ;
+ 
+ }
+.input1:hover{
+  background-color: rgb(207, 155, 71);
+  cursor:text;
+ }
+ .row{ padding-top: 60px;
+
+}
+.input2 {
+ border: none; 
+ border-radius: 15px;
+background-color:rgb(249, 187, 89) ;
+ width:150px;
+ padding: 15px ;
+ color: black;
+ 
+  font-size: larger;
+ }
+.input2:hover{
+  background-color: rgb(207, 155, 71);
+  cursor:pointer;
+ }
+ .row{ padding-top: 60px;
+
+}
+
+.input3 {
+    color: black;
+    }
+body{
+background: rgb(141, 71, 71);
+}
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 60px;
+  }
+.row5 {
+    display: flex;
+    position: absolute;
+    /* padding: 0px; */
+   margin-left: 45%;
+   top: 135%;
+  }
+  
+  .column5 {
+    flex: 33.33%;
+    padding-top: 0px;
+    padding-left:100px ;
+  }
+.row1 {
+    display: flex;
+    padding: 40px;
+    padding-bottom: 0px;
+  }
+  
+  .column1 {
+    flex: 33.33%;
+    padding: 5px;
+    padding-bottom: 0px;
+  }
+.row2 {
+    display: flex;
+    padding: 30px;
+  }
+  
+  .column2 {
+    flex: 33.33%;
+    padding: 115px;
+  }
+
+p{
+    color: black;
+}
+
+.input5{
+  margin-right: 50px;
+  color: black;
+  
+  position: absolute;
+ /* left: 40px;
+ top: 30px; */
+ font-size: larger;
+ 
+}

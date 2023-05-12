@@ -1,0 +1,112 @@
+.first{
+    position: absolute;
+    width: 350px;
+    height: 78px;
+    left: 900px;
+    top: 390px;
+
+    font-family: 'Halant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 109.5%;
+    
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.second{
+    position: absolute;
+    width: 290px;
+    height: 86px;
+    left: 400px;
+    top: 367px;
+
+    font-family: 'Halant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 109.5%;
+    
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+.third{
+    
+    position: relative;
+    width: 250px;
+    height: 63px;
+    left: 1050px;
+    top: 733px;
+    margin: 0%;
+
+    font-family: 'Halant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 109.5%;
+    
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.text-box{
+    position: relative;
+    background-color: #C69749;
+    border-radius: 38.5px;
+    width: 450px;
+    height: 35px;
+    right: 500px;
+    top: -55px;
+    border: 0px;
+}
+.fourth{
+    position: absolute;
+    width: 323px;
+    height: 124px;
+    left: 82px;
+    top: 792px;
+
+    font-family: 'Halant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 109.5%;
+    
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+.radio-button{
+    position: relative;
+    display: inline-flex;
+    width: 30px;
+	height: 20px;
+}
+.button{ 
+    position: relative;
+    background-color: #C69749;
+    font-size: 16px;
+    color:white ; 
+    font-family: sans-serif;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.5s;
+    width: 237px;
+    height: 68px;
+    top: 800px;
+    left: 45%;
+  }
+  .button:hover {
+    background-color: #735F32;
+    cursor: pointer;
+  }
