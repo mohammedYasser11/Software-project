@@ -61,6 +61,7 @@ li a:hover {
   /* margin: 10px; */
   z-index:1;
   height: 80px;
+  
 }
 body{
   background-color: #282A3A;
@@ -77,21 +78,18 @@ body{
 /*FOOTER*/
 .footer{
   position: relative;
-  height: 400px;
-  top: 2000px;
+  height: 250px;
+  top: 0px;
   background-color: #000;
   width: auto;
-  
-  
   color: #fff;
-  
 }
 .about {
   position: relative;
-  top: 100px;
+  top: 50px;
   left: 200px;
   margin: 0%;
-  width: 300px;
+  width: 500px;
   text-align: justify;
 }
 .links{
@@ -110,5 +108,18 @@ body{
   width: 100px;
   left: 550px;
   
+}
+.fa {
+  top: -30px;
+  position: relative;
+  float: right;
+  right: 200px;
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: #C69749;
 }
 /*END*/
