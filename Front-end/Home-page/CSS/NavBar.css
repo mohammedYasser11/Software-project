@@ -81,7 +81,7 @@ body{
   height: 250px;
   top: 0px;
   background-color: #000;
-  width: auto;
+  width: 100%;
   color: #fff;
 }
 .about {
